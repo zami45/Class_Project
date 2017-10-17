@@ -40,8 +40,8 @@ public class GetDataServlet extends HttpServlet {
             throws ServletException, IOException {
         try {
             
-            Statement stmt = DB.getInstance().createStatement();
-            ResultSet result = stmt.executeQuery("select * from sample");
+            Statement statement = DB.getInstance().createStatement();
+            ResultSet result = statement.executeQuery("select * from sample");
             
             ArrayList<Users> userList = new ArrayList<Users>();
             while (result.next()){
