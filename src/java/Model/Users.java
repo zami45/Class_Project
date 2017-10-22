@@ -1,27 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Classes;
 
-/**
- *
- * @author shimantta
- */
+package Model;
+
 public class Users {
     private int Id;
-    private String name;
+    private String username;
     
     public Users(){
         
-        
+       
     }
     
     public Users(int Id,String name){
         
         this.Id = Id;
-        this.name = name;
+        this.username = name;
     }
     
     public void SetId(int id){
@@ -29,14 +21,13 @@ public class Users {
     }
     
     public void SetName(String name){
-        this.name = name;
+        this.username = name;
     }
     public int getId(){
-        
         return this.Id;
     }
     
     public String getName(){
-        return this.name;
+        return this.username;
     }
 }
